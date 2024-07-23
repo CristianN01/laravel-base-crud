@@ -10,15 +10,16 @@ class Animal extends Model
     use HasFactory;
 
 
-    // protected $fillable = [
-    //     'nome',
-    //     'specie',
-    //     'razza',
-    //     'eta',
-    //     'sesso',
-    //     'peso',
-    //     'altezza',
-    //     'immagine',
-    //     'info',
-    // ];
+    protected $fillable =
+    [
+        'nome',
+        'specie',
+        'razza',
+        'eta',
+        'sesso',
+        'peso',
+        'altezza',
+        'immagine',
+        'info',
+    ];
 }

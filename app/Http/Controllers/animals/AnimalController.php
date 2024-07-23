@@ -18,4 +18,31 @@ class AnimalController extends Controller
     {
         return view('animals.show', compact('animal'));
     }
+
+    public function create()
+    {
+        // create new animal
+        return view('animals.create');
+    }
+
+    public function store(Request $request)
+    {
+        // add a new animal
+        $data = $request->all();
+
+        $newAnimal = new Animal($data);
+        $newAnimal->nome = $data ['nome'];
+        $newAnimal->specie = $data['specie'];
+        $newAnimal->razza = $data['razza'];
+        $newAnimal->eta = $data['eta'];
+        $newAnimal->sesso = $data['sesso'];
+        $newAnimal->peso= $data['peso'];
+        $newAnimal->altezza = $data['altezza'];
+        $newAnimal->immagine= $data['immagine'];
+        $newAnimal->info = $data['info'];
+
+        $newAnimal->save();
+
+        return redirect()->route('animals.show', $newAnimal);
+    }
 }
