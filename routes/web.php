@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\animals\AnimalController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/', [AnimalController::class, 'index'])->name('animals.index');
+Route::get('/animals/{animal}', [AnimalController::class, 'show'])->name('animals.show');
 
 

@@ -69,6 +69,61 @@ class AnimalSeeder extends Seeder
                 "altezza" => 10, // altezza in cm
                 "immagine" => "https://images.unsplash.com/photo-1560807707-8cc77767d783",
                 "info" => "Speedy è una tartaruga di terra molto calma e paziente. Ama prendere il sole e mangiare verdure fresche."
+            ],
+            [
+                "nome" => "Rex",
+                "specie" => "Cane",
+                "razza" => "Pastore Tedesco",
+                "eta" => 5,
+                "sesso" => "Maschio",
+                "peso" => 30.0, // peso in kg
+                "altezza" => 65, // altezza in cm
+                "immagine" => "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+                "info" => "Rex è un Pastore Tedesco molto intelligente e addestrato. È un ottimo cane da guardia e compagno fedele."
+            ],
+            [
+                "nome" => "Whiskers",
+                "specie" => "Gatto",
+                "razza" => "Maine Coon",
+                "eta" => 3,
+                "sesso" => "Femmina",
+                "peso" => 6.0,
+                "altezza" => 40,
+                "immagine" => "https://images.unsplash.com/photo-1574158622682-e40e69881006",
+                "info" => "Whiskers è una Maine Coon affettuosa e socievole. Ama arrampicarsi e osservare tutto dall'alto."
+            ],
+            [
+                "nome" => "Charlie",
+                "specie" => "Cane",
+                "razza" => "Beagle",
+                "eta" => 4,
+                "sesso" => "Maschio",
+                "peso" => 10.0,
+                "altezza" => 40,
+                "immagine" => "https://images.unsplash.com/photo-1592194996308-7d72c7a51f05",
+                "info" => "Charlie è un Beagle curioso e attivo. Adora annusare tutto e fare lunghe passeggiate."
+            ],
+            [
+                "nome" => "Kiwi",
+                "specie" => "Pappagallo",
+                "razza" => "Ara",
+                "eta" => 7,
+                "sesso" => "Maschio",
+                "peso" => 1.0, // peso in kg
+                "altezza" => 90, // altezza in cm
+                "immagine" => "https://images.unsplash.com/photo-1603235085166-43e6406e1399",
+                "info" => "Kiwi è un Ara vivace e colorato. Ama volare liberamente e chiacchierare con le persone."
+            ],
+            [
+                "nome" => "Shelly",
+                "specie" => "Tartaruga",
+                "razza" => "Tartaruga acquatica",
+                "eta" => 8,
+                "sesso" => "Femmina",
+                "peso" => 1.5, // peso in kg
+                "altezza" => 15, // altezza in cm
+                "immagine" => "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+                "info" => "Shelly è una tartaruga acquatica che ama nuotare e rilassarsi nelle acque tranquille del suo acquario."
             ]
         ];
 
