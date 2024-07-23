@@ -4,27 +4,22 @@
 
 @section('main-content')
     <div class="container">
-        <div class="row">
+        <div class="row text-center">
             <div class="col-12">
                 <h1>
                     Animals
                 </h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row ">
             @foreach ($animals as $animal)
-            <article class="col-3 p-3">
-                <img class="img-fluid" src="{{ $animal->immagine }}" alt="...">
-                <h3>
-                    {{ $animal->nome }}
-                </h3>
-                <p>
-                    E un : {{ $animal->specie }} - {{ $animal->razza }}
-                </p>
-                <p>
-                    Anni : {{ $animal->eta }}
-                </p>
-            </article>
+                <article class="col-3 p-1 text-center my_hover flex-wrap">
+                    <img class="img-fluid" src="{{ $animal->immagine }}" alt="...">
+                    <h3>
+                        {{ $animal->nome }}
+                    </h3>
+                    <a href="{{ route('animals.show', $animal) }}" class="btn btn-secondary" >Dettagli animale</a>
+                </article>
             @endforeach
         </div>
     </div>
