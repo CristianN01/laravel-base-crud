@@ -4,3 +4,19 @@
 
     border: 1px solid blue;
 }
+
+section.form {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+
+    // div {
+    //     padding: 1rem;
+    //     border: 1px solid black;
+    // }
+
+    button {
+        margin-top: 1rem;
+    }
+}

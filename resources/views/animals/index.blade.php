@@ -19,6 +19,8 @@
                         {{ $animal->nome }}
                     </h3>
                     <a href="{{ route('animals.show', $animal) }}" class="btn btn-secondary" >Dettagli animale</a>
+                    <a href="{{ route('animals.edit', $animal) }}" class="btn btn-success" >Modifica</a>
+
                 </article>
             @endforeach
         </div>
