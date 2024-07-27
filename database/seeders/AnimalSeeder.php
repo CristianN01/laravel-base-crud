@@ -111,7 +111,7 @@ class AnimalSeeder extends Seeder
                 "sesso" => "Maschio",
                 "peso" => 1.0, // peso in kg
                 "altezza" => 90, // altezza in cm
-                "immagine" => "https://www.circoloippicotaytu.it/public/_102512274_gettyimages-518360318.jpg",
+                "immagine" => "https://images.unsplash.com/photo-1592194996308-7d72c7a51f05",
                 "info" => "Kiwi è un Ara vivace e colorato. Ama volare liberamente e chiacchierare con le persone."
             ],
             [
