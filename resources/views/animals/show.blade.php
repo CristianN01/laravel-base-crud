@@ -22,6 +22,7 @@
                     Peso : {{ $animal->peso }} Kg - Alto : {{ $animal->altezza }} cm
                 </p>
                 <a href="{{ route('animals.index', $animal) }}" class="btn btn-secondary" >Animali</a>
+                <a href="{{ route('animals.edit', $animal) }}" class="btn btn-success" >Modifica</a>
         </div>
     </div>
 @endsection

@@ -30,6 +30,12 @@ class AnimalController extends Controller
         return view('animals.edit', compact('animal'));
     }
 
+    public function destroy(Animal $animal){
+        $animal->delete();
+        return redirect()->route('animals.index');
+
+    }
+
     public function update(Request $request, Animal $animal)
     {
         $data = $request->all();

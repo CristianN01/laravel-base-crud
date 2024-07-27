@@ -20,6 +20,13 @@
                     </h3>
                     <a href="{{ route('animals.show', $animal) }}" class="btn btn-secondary" >Dettagli animale</a>
                     <a href="{{ route('animals.edit', $animal) }}" class="btn btn-success" >Modifica</a>
+                    <form action="{{ route('animals.destroy', $animal) }}" method="POST" class="d-inline-block " >
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-warning" >Elimina</button>
+                    </form>
+
+
 
                 </article>
             @endforeach
