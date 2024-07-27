@@ -36,6 +36,11 @@ class AnimalController extends Controller
 
     }
 
+    public function deletedIndex(){
+        $animals = Animal::onlyTrashed()->get();
+        return view('animals.index', compact('animals'));
+    }
+
     public function update(Request $request, Animal $animal)
     {
         $data = $request->all();
